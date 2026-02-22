@@ -1,99 +1,44 @@
-Incandescent, [22-Feb-26 1:29 PM]
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel Longino | Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #030712; color: #f9fafb; scroll-behavior: smooth; }
-        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
-        .gradient-text { background: linear-gradient(90deg, #60a5fa, #c084fc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .card-hover:hover { border-color: #60a5fa; transform: translateY(-5px); transition: all 0.3s ease; }
-    </style>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
-
-    <div class="fixed top-0 left-0 w-full h-full -z-10 overflow-hidden">
-        <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-blue-900/20 blur-[120px] rounded-full"></div>
-        <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-purple-900/20 blur-[120px] rounded-full"></div>
+    <div class="animated-background">
+        <h1>Welcome to My Portfolio</h1>
     </div>
-
-    <nav class="sticky top-0 z-50 glass px-6 py-4 flex justify-between items-center backdrop-blur-md">
-        <span class="text-xl font-extrabold tracking-tight">D<span class="text-blue-500">.</span>LONGINO</span>
-        <div class="hidden md:flex gap-8 text-sm font-medium text-slate-400">
-            <a href="#projects" class="hover:text-white transition">Projects</a>
-            <a href="#stack" class="hover:text-white transition">Tech Stack</a>
-            <a href="mailto:your-email@example.com" class="text-white border border-white/20 px-4 py-1.5 rounded-full hover:bg-white hover:text-black transition">Let's Connect</a>
-        </div>
-    </nav>
-
-    <header class="max-w-6xl mx-auto px-6 pt-32 pb-20 text-center">
-        <span class="inline-block px-4 py-1.5 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-400 text-xs font-bold mb-6 tracking-widest uppercase">Kenya Tech Frontier 2026</span>
-        <h1 class="text-6xl md:text-8xl font-extrabold mb-8 tracking-tighter">Architecting <span class="gradient-text">Data & AI</span></h1>
-        <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed">
-            I build high-performance web scrapers, autonomous AI agents, and scalable data pipelines for the next generation of tech giants.
-        </p>
-    </header>
-
-    <section id="projects" class="max-w-6xl mx-auto px-6 py-20">
-        <h2 class="text-3xl font-bold mb-12">Featured Engineering</h2>
-        <div class="grid md:grid-cols-2 gap-6">
-            
-            <div class="glass p-8 rounded-3xl card-hover">
-                <div class="h-12 w-12 bg-blue-500/20 rounded-xl flex items-center justify-center mb-6 text-blue-400">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor font-bold"><path d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>
-                </div>
-                <h3 class="text-2xl font-bold mb-3">Enterprise Data Extraction</h3>
-                <p class="text-slate-400 text-sm mb-6 leading-relaxed">Built specialized scrapers using Scrapy and Oxylabs to bypass Cloudflare and Akamai for market research at scale. Optimized for 99.9% success rate across 1M+ requests.</p>
-                <div class="flex gap-3 text-xs font-mono text-blue-300">
-                    <span>#Python</span> <span>#ResidentialProxies</span> <span>#Zipline</span>
-                </div>
-            </div>
-
-Incandescent, [22-Feb-26 1:29 PM]
-<div class="glass p-8 rounded-3xl card-hover">
-                <div class="h-12 w-12 bg-purple-500/20 rounded-xl flex items-center justify-center mb-6 text-purple-400">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor font-bold"><path d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
-                </div>
-                <h3 class="text-2xl font-bold mb-3">RAG Pipeline with LLMs</h3>
-                <p class="text-slate-400 text-sm mb-6 leading-relaxed">Engineered a Retrieval-Augmented Generation system using OpenAI and Pinecone to allow companies to chat with their internal documentation securely.</p>
-                <div class="flex gap-3 text-xs font-mono text-purple-300">
-                    <span>#OpenAI</span> <span>#VectorDB</span> <span>#LangChain</span>
-                </div>
-            </div>
-
-            </div>
+    <section class="projects">
+        <h2>My Projects</h2>
+        <!-- Project cards go here -->
     </section>
-
-    <section id="stack" class="max-w-6xl mx-auto px-6 py-20 border-t border-white/5">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl font-bold">The Toolkit</h2>
-            <p class="text-slate-500 mt-2">Tools I use to build the future</p>
-        </div>
-        <div class="flex flex-wrap justify-center gap-4">
-            <span class="glass px-6 py-3 rounded-full text-sm hover:bg-white/10 cursor-default transition">Bright Data</span>
-            <span class="glass px-6 py-3 rounded-full text-sm hover:bg-white/10 cursor-default transition">Apify</span>
-            <span class="glass px-6 py-3 rounded-full text-sm hover:bg-white/10 cursor-default transition">AWS Lambda</span>
-            <span class="glass px-6 py-3 rounded-full text-sm hover:bg-white/10 cursor-default transition">Hugging Face</span>
-            <span class="glass px-6 py-3 rounded-full text-sm hover:bg-white/10 cursor-default transition">PostgreSQL</span>
-            <span class="glass px-6 py-3 rounded-full text-sm hover:bg-white/10 cursor-default transition">Docker</span>
+    <section class="connect">
+        <h2>Let's Connect & Collaborate</h2>
+        <div class="contact-cards">
+            <div class="contact-card">
+                <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                    LinkedIn
+                </a>
+            </div>
+            <div class="contact-card">
+                <a href="mailto:danietyoun@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                    Email
+                </a>
+            </div>
         </div>
     </section>
-
-    <footer class="bg-black/50 py-20 px-6 mt-20">
-        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-            <div>
-                <h2 class="text-4xl font-bold mb-4">Let’s build <br><span class="text-blue-500">something epic.</span></h2>
-                <p class="text-slate-500">Currently open to roles in Software Engineering and AI Research.</p>
-            </div>
-            <div class="text-right">
-                <a href="mailto:your-email@example.com" class="text-2xl font-bold underline decoration-blue-500 underline-offset-8 hover:text-blue-400 transition">Work With Daniel &rarr;</a>
-            </div>
+    <footer>
+        <h3>Follow Me</h3>
+        <div class="social-icons">
+            <a href="https://github.com/Etyoundaniel" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
     </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
